@@ -1,7 +1,7 @@
-.PHONY: test-1, test-2
+.PHONY: test_1, test_2
 
-test-1:
-    pytest challenge_1_python/tests.py --disable-warnings
+test_1:
+    pytest challenge_1_python/tests.py --disable-warnings --cov
 
-test-2:
-    pytest challenge_2_python/tests.py --disable-warnings
+test_2:
+    pytest challenge_2_python/tests.py --disable-warnings --cov

@@ -21,3 +21,10 @@ class TestBST:
         n1 = Node(value=1, left=None, right=None)
         assert contains(n1, 1)
         assert not contains(n1, 2)
+
+    def test_contains_value_in_left_subtree(self):
+        n1 = Node(value=1, left=None, right=None)
+        n3 = Node(value=3, left=None, right=None)
+        n2 = Node(value=2, left=n1, right=n3)
+        assert contains(n2, 1)
+        assert not contains(n2, 4)
