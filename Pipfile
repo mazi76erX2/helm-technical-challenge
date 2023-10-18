@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+
+[dev-packages]
+mypy = "1.5.1"
+pylint = "3.0.1"
+black = "23.9.1"
+coverage = "7.3.2"
+isort = "5.12.0"
+pytest = "6.2.5"
+pytest-cov = "3.0.0"
+
+[requires]
+python_version = "3.12"
