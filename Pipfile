@@ -4,7 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
+pandas = "*"
+scikit-learn = "*"
+torch = "*"
 
 [dev-packages]
 mypy = "1.5.1"
