@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 from sklearn.metrics import mean_squared_error
 
-from .movies_data_processing import merged_data
+from .movies_data_proceessing import merged_data
 from .testing_model_scikitlearn import X_train, X_test, y_train, y_test
 
 # Convert the data to PyTorch tensors
@@ -16,6 +16,7 @@ X_test_tensor = torch.tensor(X_test.values, dtype=torch.float32)
 # Create a PyTorch DataLoader for the training data
 train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
 train_dataloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+
 
 # Define a simple neural network model
 class Net(nn.Module):
@@ -28,6 +29,7 @@ class Net(nn.Module):
         x = torch.relu(self.fc1(x))
         x = self.fc2(x)
         return x
+
 
 # Initialize the model
 model_nn = Net()
