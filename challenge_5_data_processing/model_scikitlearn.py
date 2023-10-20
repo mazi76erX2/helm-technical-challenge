@@ -2,7 +2,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-from .movies_data_proceessing import merged_data
+from .movies_data_processing import merged_data
 
 # Scikit-learn
 # Split the merged dataset into training, validation, and test sets

@@ -5,8 +5,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 from sklearn.metrics import mean_squared_error
 
-from .movies_data_proceessing import merged_data
-from .testing_model_scikitlearn import X_train, X_test, y_train, y_test
+from .model_scikitlearn import X_train, X_test, y_train, y_test
 
 # Convert the data to PyTorch tensors
 X_train_tensor = torch.tensor(X_train.values, dtype=torch.float32)
